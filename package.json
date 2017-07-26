@@ -1,0 +1,15 @@
+{
+  "name": "dec-logger",
+  "version": "1.0.0",
+  "description": "An extensible logging utility for javascript",
+  "main": "index.js",
+  "author": "sdmichelini",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  },
+  "scripts" : {
+    "test": "mocha -R spec tests"
+  }
+}
