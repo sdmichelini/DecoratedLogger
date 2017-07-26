@@ -6,7 +6,7 @@ A simple and extensible logger for Javascript
 
 ```javascript
 // Simple Logger
-let logger = require('dec-logger')
+let logger = require('dec-logger')()
 
 logger.info('message') // Outputs: 'INFO: message'
 logger.error('message') // Outputs: 'ERROR: message'
