@@ -9,6 +9,7 @@
     "chai": "^4.1.0",
     "mocha": "^3.4.2"
   },
+  "url": "https://github.com/sdmichelini/DecoratedLogger",
   "scripts" : {
     "test": "mocha -R spec tests"
   }
