@@ -33,6 +33,16 @@ describe('Decorated Logger Tests', () => {
             expect(message).to.contain('message')
             expect(message).to.contain('DB: ')
         })
+        it('should be able to add a calculated decorator', () => {
+            const calculatedDecorator = logger.addCalculated(() => {
+                return Math.random()
+            })
+            const message = calculatedDecorator.getMessage('test')
+            expect(message).to.contain('test')
+            const number = message.split(' ')
+            expect(parseFloat(number[0])).to.be.above(0.0)
+            expect(parseFloat(number[0])).to.be.below(1.0)
+        })
         it('should be able to add multiple decorators', () => {
             const multiLogger = logger.addString('DB: ').addDate()
 

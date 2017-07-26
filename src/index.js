@@ -27,6 +27,14 @@ let logger =  (function() {
         }
         return this
     }
+
+    this.addCalculated = function (method) {
+        const currentDecor = this.getDecorated()
+        this.getDecorated = () => {
+            return method() + ' ' + currentDecor
+        }
+        return this
+    }
 })
 
 module.exports = function () {
