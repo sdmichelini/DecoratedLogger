@@ -1,6 +1,6 @@
 {
   "name": "dec-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An extensible logging utility for javascript",
   "main": "index.js",
   "author": "sdmichelini",
@@ -9,14 +9,14 @@
     "chai": "^4.1.0",
     "mocha": "^3.4.2"
   },
-  "bugs" : {
+  "bugs": {
     "url": "https://github.com/sdmichelini/DecoratedLogger/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sdmichelini/DecoratedLogger"
   },
-  "scripts" : {
+  "scripts": {
     "test": "mocha -R spec tests"
   }
 }
