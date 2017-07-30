@@ -31,4 +31,6 @@ even a custom function using the `addFunction()` function
 ## About ##
 
 It uses the decorator pattern to adjust the log output and chain different 
-types of logs.
+types of logs. 
+
+This logger does not have any dependecies. 
